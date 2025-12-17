@@ -1,7 +1,7 @@
 def check_anagram (a:str,b:str):
     if len(a)==len(b):
         for i in (set(a.lower())):
-            if a.count(i)!=b.count(i):
+            if a.lower().count(i)!=b.lower().count(i):
                 return False
         else:
                 return True
